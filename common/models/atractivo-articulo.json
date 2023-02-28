@@ -1,0 +1,30 @@
+{
+  "name": "atractivo_articulo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "id_atractivo": {
+      "type": "number"
+    },
+    "articulo": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "atractivo": {
+      "type": "belongsTo",
+      "model": "atractivo",
+      "foreignKey": "id_atractivo"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

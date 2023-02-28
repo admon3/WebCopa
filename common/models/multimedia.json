@@ -1,0 +1,35 @@
+{
+  "name": "multimedia",
+  "plural": "multimedias",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "id_padre": {
+      "type": "number"
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "ruta": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string"
+    },
+    "pertenece_a": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

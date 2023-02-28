@@ -1,0 +1,36 @@
+{
+  "name": "hosped_servicio",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "id_hospedaje": {
+      "type": "number"
+    },
+    "servicio": {
+      "type": "string"
+    },
+    "tipo_servicio": {
+      "type": "string"
+    },
+    "icono": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "hospedaje": {
+      "type": "belongsTo",
+      "model": "hospedaje",
+      "foreignKey": "id_hospedaje"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

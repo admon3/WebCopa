@@ -1,0 +1,62 @@
+{
+  "name": "atractivo",
+  "plural": "atractivos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "informacion": {
+      "type": "string"
+    },
+    "ubicacion": {
+      "type": "string"
+    },
+    "como_llegar": {
+      "type": "string"
+    },
+    "jerarquia": {
+      "type": "string"
+    },
+    "img_principal": {
+      "type": "string",
+      "required": false
+    },
+    "comunidad": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string"
+    },
+    "subtipo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "articulos": {
+      "type": "hasMany",
+      "model": "atractivo_articulo",
+      "foreignKey": "id_atractivo"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

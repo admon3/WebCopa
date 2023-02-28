@@ -1,0 +1,44 @@
+{
+  "name": "resena",
+  "plural": "resenas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "autor": {
+      "type": "string",
+      "required": true
+    },
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "contenido": {
+      "type": "string",
+      "required": true
+    },
+    "fecha_publicacion": {
+      "type": "date",
+      "required": true
+    },
+    "estado": {
+      "type": "string"
+    },
+    "img_user": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

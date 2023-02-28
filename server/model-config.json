@@ -1,0 +1,74 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "MySQL"
+  },
+  "AccessToken": {
+    "dataSource": "MySQL",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "MySQL",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "MySQL",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "MySQL",
+    "public": false
+  },
+  "hospedaje": {
+    "dataSource": "MySQL",
+    "public": true
+  },
+  "atractivo": {
+    "dataSource": "MySQL",
+    "public": true
+  },
+  "resena": {
+    "dataSource": "MySQL",
+    "public": true
+  },
+  "noticia": {
+    "dataSource": "MySQL",
+    "public": true
+  },
+  "multimedia": {
+    "dataSource": "MySQL",
+    "public": true
+  },
+  "atractivo_articulo": {
+    "dataSource": "MySQL",
+    "public": true
+  },
+  "hosped_servicio": {
+    "dataSource": "MySQL",
+    "public": true
+  },
+  "hosped_thabitacion": {
+    "dataSource": "MySQL",
+    "public": true
+  },
+  "container": {
+    "dataSource": "storage",
+    "public": true
+  }
+}

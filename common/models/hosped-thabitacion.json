@@ -1,0 +1,34 @@
+{
+  "name": "hosped_thabitacion",
+  "plural": "hosped_thabitaciones",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "id_hospedaje": {
+      "type": "number"
+    },
+    "tipo_habitacion": {
+      "type": "string"
+    },
+    "icono": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "hospedaje": {
+      "type": "belongsTo",
+      "model": "hospedaje",
+      "foreignKey": "id_hospedaje"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

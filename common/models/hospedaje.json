@@ -1,0 +1,71 @@
+{
+  "name": "hospedaje",
+  "plural": "hospedajes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "precio_max": {
+      "type": "number"
+    },
+    "precio_min": {
+      "type": "number"
+    },
+    "categoria": {
+      "type": "number"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "pagina_web": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "cel_whatsapp": {
+      "type": "string"
+    },
+    "informacion": {
+      "type": "string"
+    },
+    "img_principal": {
+      "type": "string",
+      "required":false
+    },
+    "titular": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "servicios": {
+      "type": "hasMany",
+      "model": "hosped_servicio",
+      "foreignKey": "id_hospedaje"
+    },
+    "tipos_habitacion": {
+      "type": "hasMany",
+      "model": "hosped_thabitacion",
+      "foreignKey": "id_hospedaje"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
