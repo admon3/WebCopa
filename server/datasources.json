@@ -4,11 +4,11 @@
     "connector": "memory"
   },
   "MySQL": {
-    "host": "localhost",
-    "port": 3306,
-    "url": "",
-    "database": "db_copa_turismo",
-    "password": "admin",
+    "host": "containers-us-west-63.railway.app",
+    "port": 7864,
+    "url": "mysql://root:2PExG1vLOEC8hGiKaeWg@containers-us-west-63.railway.app:7864/railway",
+    "database": "railway",
+    "password": "2PExG1vLOEC8hGiKaeWg",
     "name": "MySQL",
     "user": "root",
     "connector": "mysql"
