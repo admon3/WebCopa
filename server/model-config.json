@@ -15,7 +15,14 @@
   },
   "User": {
     "dataSource": "MySQL",
-    "public": false
+    "public": true,
+    "options": {
+      "emailVerificationRequired": true,
+      "realmRequired": false,
+      "resetPasswordTokenExpirationInSeconds": 3600,
+      "maxTTL": 31536000,
+      "minTTL": 0
+    }
   },
   "AccessToken": {
     "dataSource": "MySQL",

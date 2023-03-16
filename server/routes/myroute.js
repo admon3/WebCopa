@@ -11,4 +11,16 @@ module.exports = function(app) {
         // res.send(mypath);
         res.sendFile(mypath);
     });
+    var User = app.models.User;
+    app.post('/login', function(req, res) {
+        User.login({
+            email: req.body.email,
+            password: req.body.password
+        }, 'user', function(err, token) {
+        if (err) return res.status(401).send(err);
+            res.send({
+                id: token.id
+            });
+        });
+    });
 };

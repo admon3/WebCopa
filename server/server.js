@@ -31,4 +31,8 @@ boot(app, __dirname, function(err) {
   if (require.main === module)
     app.start();
 });
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 require('./routes/myroute')(app);
