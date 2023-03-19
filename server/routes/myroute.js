@@ -18,9 +18,7 @@ module.exports = function(app) {
             password: req.body.password
         }, 'user', function(err, token) {
         if (err) return res.status(401).send(err);
-            res.send({
-                id: token.id
-            });
+            res.send(token);
         });
     });
 };
