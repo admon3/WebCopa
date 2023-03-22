@@ -17,13 +17,31 @@ module.exports = function(app) {
         // res.send(mypath);
         res.sendFile(mypath);
     });
+    app.get('/HomeAtractivo/:id', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
     app.get('/SiteNoticias', function(req, res) {
         const path = require('path');
         let mypath= path.join(__dirname, '../..', 'client', 'index.html');
         // res.send(mypath);
         res.sendFile(mypath);
     });
+    app.get('/SiteNoticia/:id', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
     app.get('/SiteHospedajes', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/SiteHospedaje/:id', function(req, res) {
         const path = require('path');
         let mypath= path.join(__dirname, '../..', 'client', 'index.html');
         // res.send(mypath);
