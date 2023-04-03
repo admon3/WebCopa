@@ -1,4 +1,64 @@
 module.exports = function(app) {
+    app.get('/perfil', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/noticias', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/noticia/:id', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/eventos', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/evento/:id', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/hospedaje/:id', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/hospedajes', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/resenas', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/atractivo/:id', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/atractivos', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
     app.get('/admin', function(req, res) {
         const path = require('path');
         let mypath= path.join(__dirname, '../..', 'client', 'index.html');
@@ -81,4 +141,5 @@ module.exports = function(app) {
             res.send(token);
         });
     });
+
 };
