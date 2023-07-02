@@ -1,0 +1,65 @@
+{
+  "name": "servicio",
+  "plural": "servicios",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "tipo": {
+      "type": "number",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "img": {
+      "type": "string"
+    },
+    "pagina_web": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "referencia": {
+      "type": "string"
+    },
+    "ubicacion": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "formas_pago": {
+      "type": "hasMany",
+      "model": "servicio_pago",
+      "foreignKey": "id_servicio"
+    },
+    "horarios": {
+      "type": "hasMany",
+      "model": "horarios",
+      "foreignKey": "id_servicio"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

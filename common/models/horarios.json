@@ -1,0 +1,89 @@
+{
+  "name": "horarios",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "id_servicio": {
+      "type": "number"
+    },
+    "estado_lunes": {
+      "type": "boolean"
+    },
+    "lunes_apertura": {
+      "type": "string"
+    },
+    "lunes_cierre": {
+      "type": "string"
+    },
+     "estado_martes": {
+      "type": "boolean"
+    },
+    "martes_apertura": {
+      "type": "string"
+    },
+    "martes_cierre": {
+      "type": "string"
+    },
+     "estado_miercoles": {
+      "type": "boolean"
+    },
+    "miercoles_apertura": {
+      "type": "string"
+    },
+    "miercoles_cierre": {
+      "type": "string"
+    },
+     "estado_jueves": {
+      "type": "boolean"
+    },
+    "jueves_apertura": {
+      "type": "string"
+    },
+    "jueves_cierre": {
+      "type": "string"
+    },
+     "estado_viernes": {
+      "type": "boolean"
+    },
+    "viernes_apertura": {
+      "type": "string"
+    },
+    "viernes_cierre": {
+      "type": "string"
+    },
+     "estado_sabado": {
+      "type": "boolean"
+    },
+    "sabado_apertura": {
+      "type": "string"
+    },
+    "sabado_cierre": {
+      "type": "string"
+    },
+     "estado_domingo": {
+      "type": "boolean"
+    },
+    "domingo_apertura": {
+      "type": "string"
+    },
+    "domingo_cierre": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "servicio": {
+      "type": "belongsTo",
+      "model": "servicio",
+      "foreignKey": "id_servicio"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

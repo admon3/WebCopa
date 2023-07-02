@@ -13,6 +13,7 @@ module.exports = function(Hospedaje) {
                 console.log(fileObject.files.file[0]);
                 instance.updateAttributes({
                   img_principal: `/api/containers/multimedia/download/${fileObject.files.file[0].name}`
+                  
                 }, function(err, instance) {
                   if (err) return cb(err);
                   cb(null, fileObject.files.file[0]);

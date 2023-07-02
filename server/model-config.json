@@ -78,5 +78,29 @@
   "container": {
     "dataSource": "storage",
     "public": true
+  },
+  "servicio": {
+    "dataSource": "MySQL",
+    "public": true
+  },
+  "guia": {
+    "dataSource": "MySQL",
+    "public": true
+  },
+  "guia_idioma": {
+    "dataSource": "MySQL",
+    "public": true
+  },
+  "guia_tipo": {
+    "dataSource": "MySQL",
+    "public": true
+  },
+  "horarios": {
+    "dataSource": "MySQL",
+    "public": true
+  },
+  "servicio_pago": {
+    "dataSource": "MySQL",
+    "public": true
   }
 }

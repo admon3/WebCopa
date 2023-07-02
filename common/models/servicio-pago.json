@@ -1,0 +1,33 @@
+{
+  "name": "servicio_pago",
+  "plural": "servicio_pagos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "id_servicio": {
+      "type": "number",
+      "required": true
+    },
+    "pago": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "servicio": {
+      "type": "belongsTo",
+      "model": "servicio",
+      "foreignKey": "id_servicio"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

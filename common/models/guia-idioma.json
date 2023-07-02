@@ -1,0 +1,33 @@
+{
+  "name": "guia_idioma",
+  "plural": "guia_idiomas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "id_guia": {
+      "type": "number",
+      "required": true
+    },
+    "idioma": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "guia": {
+      "type": "belongsTo",
+      "model": "guia",
+      "foreignKey": "id_guia"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

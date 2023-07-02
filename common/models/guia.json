@@ -1,0 +1,56 @@
+{
+  "name": "guia",
+  "plural": "guias",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "apellidos": {
+      "type": "string",
+      "required": true
+    },
+    "correo": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "sobre_mi": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "number"
+    },
+    "img": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tipos": {
+      "type": "hasMany",
+      "model": "guia_tipo",
+      "foreignKey": "id_guia"
+    },
+    "idiomas": {
+      "type": "hasMany",
+      "model": "guia_idioma",
+      "foreignKey": "id_guia"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

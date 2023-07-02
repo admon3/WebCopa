@@ -21,7 +21,7 @@ module.exports = function(Resena) {
           });
         });
       };
-      Resena.remoteMethod(
+    Resena.remoteMethod(
         'uploadImage',
         {
           description: 'Sube la foto del autor de la Resena',
@@ -33,5 +33,5 @@ module.exports = function(Resena) {
           returns: {arg: 'image', type: 'object'},
           http: {verb: 'post', path: '/:id/image'}
         }
-      );
+    );
 };

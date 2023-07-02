@@ -16,7 +16,7 @@
     },
     "img": {
       "type": "string",
-      "required":false
+      "required": false
     },
     "titulo": {
       "type": "string"
