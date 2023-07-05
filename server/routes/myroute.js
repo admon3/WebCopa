@@ -131,6 +131,54 @@ module.exports = function(app) {
         // res.send(mypath);
         res.sendFile(mypath);
     });
+    app.get('/guias', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/guia/:id', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/servicios', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/servicio/:id', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/HomeServices/:id', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/HomeServices', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/HomeService/:id', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
+    app.get('/HomeGuides', function(req, res) {
+        const path = require('path');
+        let mypath= path.join(__dirname, '../..', 'client', 'index.html');
+        // res.send(mypath);
+        res.sendFile(mypath);
+    });
     var User = app.models.User;
     app.post('/login', function(req, res) {
         User.login({
