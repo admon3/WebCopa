@@ -4,11 +4,11 @@
     "connector": "memory"
   },
   "MySQL": {
-    "host": "viaduct.proxy.rlwy.net",
-    "port": 25619,
-    "url": "mysql://root:hfgCCc-gBF3eg5aHFfc1Bd4HadFFgFcD@viaduct.proxy.rlwy.net:25619/railway",
+    "host": "mysql.railway.internal",
+    "port": 18210,
+    "url": "mysql://root:NDzzKopSwcJjveTvLtGSOcSlFNcXxysP@roundhouse.proxy.rlwy.net:18210/railway",
     "database": "railway",
-    "password": "hfgCCc-gBF3eg5aHFfc1Bd4HadFFgFcD",
+    "password": "NDzzKopSwcJjveTvLtGSOcSlFNcXxysP",
     "name": "MySQL",
     "user": "root",
     "connector": "mysql"
